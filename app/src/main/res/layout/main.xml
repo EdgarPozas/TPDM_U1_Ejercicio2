@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_margin="10dp">
+
+	<TextView
+		android:id="@+id/t1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Valor 1"/>
+
+	<EditText
+		android:layout_below="@+id/t1"
+		android:layout_width="match_parent"
+		android:inputType="number"
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:id="@+id/valor1"/>
+
+	<TextView
+		android:id="@+id/t2"
+		android:layout_below="@id/valor1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Valor 2"/>
+
+	<EditText
+		android:layout_below="@id/t2"
+		android:layout_width="match_parent"
+		android:inputType="number"
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:id="@+id/valor2"/>
+
+	<TextView
+		android:id="@+id/t3"
+		android:layout_below="@id/valor2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Valor 3"/>
+
+	<EditText
+		android:layout_below="@id/t3"
+		android:layout_width="match_parent"
+		android:inputType="number"
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:id="@+id/valor3"/>
+
+	<LinearLayout
+		android:layout_below="@id/valor3"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="35dp">
+
+		<Button
+			android:onClick="obtenerMayor"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Obtener Mayor"/>
+
+		<Button
+			android:onClick="obtenerMenor"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Obtener Menor"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+
